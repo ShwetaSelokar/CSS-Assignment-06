@@ -1,0 +1,180 @@
+body {
+    background-image: url("./shara desert.jpg");
+    background-size: 100%;
+    background-position:fixed;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    line-height: 70px;
+    height: 100px;
+    margin: 2% 8%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.bar_logo {
+    margin-top: 25%;
+
+}
+
+.nav_logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.item_right {
+    float: right;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.sahara {
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 40vw;
+    color: white;
+}
+
+.sahara h1 {
+    font-size: 6em;
+    margin-bottom: 0;
+}
+
+.sahara p {
+    font-size: 1em;
+    line-height: 30px;
+}
+
+.sahara button {
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.grid {
+    width: 40vw;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-items: center;
+    margin-top: 5%;
+    margin-left: 4%;
+}
+
+.box {
+    width: 250px;
+    height: 230px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.box.box1 {
+    background-image: url("./pic-1.png");
+
+}
+
+.box.box2 {
+    background-image: url("./pic-2.png");
+}
+
+.box.box3 {
+    background-image: url("./pic-3.png");
+}
+
+.box.box4 {
+    background-image: url("./pic-4.png");
+}
+
+.box:hover {
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    position: relative;
+    top: -10px;
+
+}
+
+@media(min-width:320px) and (max-width:680px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sahara {
+        margin-top: 0;
+        margin-left: 10%;
+        width: 80%;
+        color: white;
+    }
+
+    .sahara h1 {
+        font-size: 2em;
+        margin-bottom: 0;
+    }
+
+    .sahara p {
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    .sahara button {
+        border-radius: 10px;
+        border: none;
+        font-size: 12px;
+        width: 30%;
+        height: 35px;
+        margin-top: 15px;
+    }
+
+    .grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        justify-items: center;
+        margin-top: 10%;
+        margin-left: 2%;
+
+    }
+
+    .box {
+        width: 80%;
+        height: 230px;
+        border-radius: 20px;
+        margin: 10px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 50px;
+        position: absolute;
+    }
+    ul li a {
+     display: flex;
+     flex-direction: column;
+    }
+}
